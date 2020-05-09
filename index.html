@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Your Dashboard</title>
+  <link href="dist/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/dark-mode.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body class="sb-nav-fixed">
+<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark custom-bg-dark">
+  <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="custom-control custom-switch">
+    <div class = "right-header">
+      <ul>
+        <li><i class="fa fa-search" aria-hidden="true"></i></li>
+        <li><i class="fa fa-users" aria-hidden="true"></i></li>
+        <li><i class='far fa-hand-rock'></i></li>
+        <li>
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+            </label>
+          </div>
+        </li>
+        <!--			<li><label class="switch"><input type="checkbox"><span class="slider round"></span></label></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="layoutSidenav">
+  <div id="layoutSidenav_nav">
+    <div class ="sidenav-menu">
+      <ul>
+        <li>2</li>
+        <li><i class="fa fa-stop-circle" aria-hidden="true"></i></li>
+        <li><i class="fa fa-folder-open" aria-hidden="true"></i></li>
+        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      </ul>
+    </div>
+    <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+      <div class="sb-sidenav-menu">
+        <div class="nav animated fadeInDown delay-0.1s">
+          <!--<div class="sb-sidenav-menu-heading">Core</div>-->
+          <a class="nav-link" href="index.html"
+          >
+            <b>Your Portfolio</b></a>
+          <a class="nav-link" href="#" >
+            <div class="sb-nav-link-icon">
+              <i class="fas fa-chart-area"></i>
+            </div>Final Inst
+          </a>
+          <span class="element-text">15 Elements</span>
+          <a class="nav-link" href="#">
+            <div class="sb-nav-link-icon">
+              <i class="fas fa-chart-area"></i>
+            </div>Strong
+          </a>
+          <span class="element-text">12 Elements</span>
+          <a class="nav-link" href="#">
+            <div class="sb-nav-link-icon">
+              <i class="fas fa-chart-area"></i>
+            </div>Rising Star
+          </a>
+          <span class="element-text">8 Elements</span>
+          <a class="nav-link" href="#">
+            <div class="sb-nav-link-icon">
+              <i class="fas fa-chart-area"></i>
+            </div>High Risks
+          </a>
+          <span class="element-text">10 Elements</span>
+          <a class="nav-link" href="#">
+            <div class="sb-nav-link-icon">
+              <i class="fas fa-chart-area"></i>
+            </div>Teach Start
+          </a>
+          <span class="element-text">8 Elements</span>
+          <a class="nav-link" href="#">
+            <div class="sb-nav-link-icon">
+              <i class="fas fa-chart-area"></i>
+            </div>Misc
+          </a>
+          <span class="element-text">7 Elements</span>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div id="layoutSidenav_content">
+    <main>
+      <div class="container-fluid card-icon">
+        <span class="animated fadeInLeft delay-0.1s">Strong</span>
+        <h1 class="animated fadeInLeft delay-0.1s">Overview</h1>
+        <div class="row">
+          <div class="col-xl-3 col-md-6">
+            <div class="bg-primary text-white mb-4">
+              <div class="card-body">
+                <div class="body-text">
+                  <i class="fab fa-twitter margin-right"></i>Twitter INC.
+                </div>
+                <span>NASDAQ</span>
+                <canvas id="cardChart" width="100%" height="30"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="bg-primary text-white mb-4">
+              <div class="card-body">
+                <div class="body-text">
+                  <i class="fab fa-twitter margin-right"></i>LG INC.
+                </div>
+                <span>KRX</span>
+                <canvas id="cardChart2" width="100%" height="30"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-md-4">
+            <h1 class="col-xl-3 mt-0 custom-border animated fadeInRight delay-0.1s">YOYO</h1>
+            <div class="mb-4">
+              <div class="card-body extra-dark-blue animated fadeInUp delay-0.1s">$ 19,99.21
+                <div class="graph-stats animated fadeInUp delay-0.1s">-2.9%(5.6)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-6 col-md-6">
+            <div class="card-icon">
+              <span class="animated fadeInRight delay-0.1s">Banchmark</span>
+              <div class="row">
+                <div class="social animated fadeInUp delay-0.1s">
+                  <ul>
+                    <li>
+                      <i class="fab fa-facebook"></i>
+                      <span>fb</span>
+                    </li>
+                    <li>
+                      <i class="fab fa-amazon"></i>
+                      <span>amz</span>
+                    </li>
+                    <li>
+                      <i class="fab fa-twitter"></i>
+                      <span>twt</span>
+                    </li>
+                    <li>
+                      <i class="fab fa-amazon"></i>
+                      <span>amz</span>
+                    </li>
+                    <li>
+                      <i class="fab fa-facebook"></i>
+                      <span>fb</span>
+                    </li>
+                    <li>
+                      <i class="fab fa-facebook"></i>
+                      <span>fb</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-md-6">
+            <div class="mb-4 card-icon">
+              <div class="row">
+                <div class="social">
+                  <div class="card-body">
+                    <canvas id="myAreaChart1" width="100%" height="30"></canvas>
+                  </div>
+                  <div class="card-footer-stats">
+                    <ul>
+                      <li><a href="#">1D</a></li>
+                      <li><a href="#">5D</a></li>
+                      <li><a href="#">1M</a></li>
+                      <li><a href="#">6M</a></li>
+                      <li><a href="#">1y</a></li>
+                      <li><a href="#">6Y</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-deck">
+          <div class="card animated fadeInUp delay-0.1s">
+            <div class="card-body card-body-icon">
+              <h5 class="card-title">Worst 3 stocks</h5>
+              <div class="card-icon">
+                <a href=""><i class="fab fa-apple"></i></a>
+              </div>AAPL<span>Apple-NASDAQ<a> 12.5% </a></span>
+            </div>
+            <div class="card-body card-body-icon">
+              <div class="card-icon">
+                <a href=""><i class="fab fa-yahoo"></i></a>
+              </div>MAT<span>Matlite-NASDAQ <a> +10.5% </a> </span>
+            </div>
+            <div class="card-body">
+              <div class="card-icon">
+                <a href=""><i class="fab fa-google"></i></i></a>
+              </div>LGCIF<span>LG-Corporations <a> +10.0% </a></span>
+            </div>
+          </div>
+          <div class="card animated fadeInUp delay-0.1s">
+            <div class="card-body card-body-icon">
+              <h5 class="card-title">Worst 3 stocks</h5>
+              <div class="card-icon">
+                <a href=""><i class="fab fa-facebook"></i></a>
+              </div>AAPL<span>Apple-NASDAQ <a> -09.5% </a></span>
+            </div>
+            <div class="card-body card-body-icon">
+              <div class="card-icon">
+                <a href=""><i class="fab fa-facebook"></i></a>
+              </div>MAT<span>Matlite-NASDAQ <a> -09.2% </a> </span>
+            </div>
+            <div class="card-body">
+              <div class="card-icon">
+                <a href=""><i class="fab fa-facebook"></i></a>
+              </div>LGCIF<span>LG-Corporations <a> -02.5% </a></span>
+            </div>
+          </div>
+          <div class="card animated fadeInUp delay-0.1s">
+            <div class="card-body">
+              <h6 class="card-title">Stoke Details</h6>
+              <div class="card-icon">
+                <div class="table-responsive-sm">
+                  <table class="table">
+                    <thead>
+                    <tr>
+                      <th>Open</th>
+                      <th>High</th>
+                      <th>52 weeks</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <th>7200</th>
+                      <th>9500</th>
+                      <th>1907</th>
+                    </tr>
+                    </tbody>
+                    <thead>
+                    <tr>
+                      <th>Prev Close</th>
+                      <th>Low</th>
+                      <th>52 weeks Low</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <th>7110</th>
+                      <th>1200</th>
+                      <th>2009</th>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<script>
+  var ctx = document.getElementById("cardChart");
+  var myLineChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ["Mar 1", "Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6","Mar 7","Mar 8","Mar 9"],
+      datasets: [{
+        label: "Sessions",
+        lineTension: 0.3,
+        backgroundColor: "rgba(2,117,216,0)",
+        borderColor: "rgba(2,199,239,1)",
+        pointRadius: 0,
+        pointBackgroundColor: "rgba(2,199,239,1)",
+        pointBorderColor: "rgba(2,199,239,0.8)",
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: "rgba(2,199,239,1)",
+        pointHitRadius: 50,
+        pointBorderWidth: 1,
+        data: [5, 10, 20, 70, 50, 70,2,60,5],
+      }],
+    },
+    options: {
+      scales: {
+        xAxes: [{
+          time: {
+            unit: 'date'
+          },
+          gridLines: {
+            color: "rgba(0, 0, 0, 0)",
+          },
+          ticks: {
+            maxTicksLimit: 0
+          }
+        }],
+        yAxes: [{
+          ticks: {
+            min: 0,
+            max: 70,
+            maxTicksLimit: 0
+          },
+          gridLines: {
+            color: "rgba(0, 0, 0, 0)",
+          }
+        }],
+      },
+      legend: {
+        display: false
+      }
+    }
+  });
+
+  var ctx2 = document.getElementById("cardChart2");
+  var myLineChart2 = new Chart(ctx2, {
+    type: 'line',
+    data: {
+      labels: ["Mar 1", "Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6","Mar 7","Mar 8","Mar 9"],
+      datasets: [{
+        label: "Sessions",
+        lineTension: 0.3,
+        backgroundColor: "rgba(2,117,216,0)",
+        borderColor: "rgba(243,0,80,1)",
+        pointRadius: 0,
+        pointBackgroundColor: "rgba(243,0,80,1)",
+        pointBorderColor: "rgba(243,0,80,0.8)",
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: "rgba(243,0,80,1)",
+        pointHitRadius: 50,
+        pointBorderWidth: 1,
+        data: [5, 10, 20, 70, 50, 70,2,60,5],
+      }],
+    },
+    options: {
+      scales: {
+        xAxes: [{
+          time: {
+            unit: 'date'
+          },
+          gridLines: {
+            color: "rgba(0, 0, 0, 0)",
+          },
+          ticks: {
+            maxTicksLimit: 0
+          }
+        }],
+        yAxes: [{
+          ticks: {
+            min: 0,
+            max: 70,
+            maxTicksLimit: 0
+          },
+          gridLines: {
+            color: "rgba(0, 0, 0, 0)",
+          }
+        }],
+      },
+      legend: {
+        display: false
+      }
+    }
+  });
+
+  var ctx3 = document.getElementById("myAreaChart1");
+  var myLineChart3 = new Chart(ctx3, {
+    type: 'line',
+    data: {
+      labels: ["Mar 1", "Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6", "Mar 7", "Mar 8", "Mar 9", "Mar 10", "Mar 11", "Mar 12", "Mar 13"],
+      datasets: [{
+        label: "Sessions",
+        lineTension: 0.4,
+        backgroundColor: "rgba(2,117,216,0)",
+        borderColor: "rgba(93,92,180,1)",
+        pointRadius: 0,
+        pointBackgroundColor: "rgba(93,92,180,1)",
+        pointBorderColor: "rgba(93,92,180,0.8)",
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: "rgba(93,92,180,1)",
+        pointHitRadius: 50,
+        pointBorderWidth: 2,
+        data: [8000, 500, 18000, 1500, 60000, 3500, 80000, 12000, 85000, 95000, 65000, 120000, 135000],
+      }],
+    },
+    options: {
+      scales: {
+        xAxes: [{
+          time: {
+            unit: 'date'
+          },
+          gridLines: {
+            color: "rgba(0, 0, 0, 0)",
+          },
+          ticks: {
+            maxTicksLimit: 0
+          }
+        }],
+        yAxes: [{
+          ticks: {
+            min: 0,
+            // max: 40000,
+            maxTicksLimit: 0
+          },
+          gridLines: {
+            color: "rgba(0, 0, 0, 0)",
+          }
+        }],
+      },
+      legend: {
+        display: false
+      }
+    }
+  });
+
+</script>
+<script src="js/dark-mode-switch.js"></script>
+<script src="js/switchToggle.js"></script>
+</body>
+</html>

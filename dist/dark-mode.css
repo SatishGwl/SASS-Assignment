@@ -1,0 +1,79 @@
+/* Dark Mode Bootstrap*/
+
+
+[data-theme="dark"] {
+    background-color: #333;
+    color: #eee;
+}
+
+[data-theme="dark"] .card-icon h1  {
+    color: #fff;
+}
+
+
+[data-theme="dark"] .card  {
+    background-color: #333;
+    border-color: #fff;
+}
+[data-theme="dark"] .card-title  {
+    color: #fff;
+    background-color: #333;
+    /*border-color: #fff;*/
+}
+[data-theme="dark"] .card-icon {
+    color: #fff;
+}
+
+[data-theme="dark"] .body-text {
+    color: #9878BC;
+}
+
+[data-theme="dark"] .social li {
+    background-color: #333;
+}
+
+[data-theme="dark"] .social li svg {
+    color: #9878BC;
+}
+
+[data-theme="dark"] .sidenav-menu{
+    background-color: #333;
+}
+
+[data-theme="dark"] .sidenav-menu ul li:first-child {
+    color: #9878BC;
+    background-color: #fff;
+}
+
+[data-theme="dark"] .sidenav-menu li  {
+    color: #9878BC;
+}
+
+[data-theme="dark"] .sidenav-menu li svg{
+    color: #9878BC;
+}
+
+[data-theme="dark"] .sb-sidenav{
+    background-color: #333;
+}
+
+[data-theme="dark"] .sb-sidenav-menu{
+    background-color: #333;
+}
+[data-theme="dark"] .sb-nav-fixed #layoutSidenav #layoutSidenav_nav{
+    background-color: #333;
+}
+[data-theme="dark"] .sb-nav-fixed #layoutSidenav #layoutSidenav_nav a{
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 1px 0px 0 rgba(255, 255, 255, 0.1);
+}
+[data-theme="dark"] input:checked + .slider {
+    background-color: #66bb6a;
+}
+[data-theme="dark"] .right-header {
+    background-color: #333;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 1px 0px 0 rgba(255, 255, 255, 0.1);
+    color: #fff;
+}

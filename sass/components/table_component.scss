@@ -1,0 +1,26 @@
+/* ======================== Table CSS Start ================ */
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  color: #807AA4;
+  font-size: 0.875rem;
+  font-weight: 500;
+  /*border-top: 1px solid #dee2e6;*/
+}
+.table thead th {
+  vertical-align: bottom;
+  vertical-align: bottom;
+  color: #E0E2EA;
+  font-size: 0.875rem;
+  font-weight: 800;
+  font-family: Helvetica Neue;
+}
+
+/* ======================== Table CSS End ================ */
